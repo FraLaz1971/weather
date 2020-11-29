@@ -1,0 +1,15 @@
+this is a template project, it is compsed by a simple c program
+plus a graphic dialog utility based qt library called qdialog .
+#To compile and install on GNU/Linux or Mac it just run:
+./configure
+make
+make install
+# To compile on Microsoft Windows  just run:
+./configure
+mingw32-make
+# to run the program on Linux / Mac just click on the weather.sh file or run on bash terminal
+./weather.sh
+# to run the program on MS windows just click on the weather.bat file or run on the cmd terminal
+.\weather.bat
+# or
+weather.bat
