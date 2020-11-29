@@ -4,7 +4,7 @@ a=0;t=0;TARGETS="";RMTARGETS=""; EEXT=".exe";OEXT=".o"
 echo 'CC=gcc -g -O2'
 echo 'MAKE = make'
 echo 'SRC = $(wildcard src/*.c)'
-echo "OBJ = src/weather.o"
+echo "OBJ = src/weather.o src/readfile.o"
 printf "QOBJ = qdialog/capplication.o qdialog/ccalendarbox.o qdialog/cdialogapp.o "
 printf "qdialog/cfilebox.o qdialog/cformbox.o qdialog/cgaugebox.o qdialog/cinputbox.o "
 printf "qdialog/cmenubox.o qdialog/cmsgbox.o qdialog/cpausebox.o qdialog/ctailbox.o qdialog/ctextbox.o qdialog/ctimebox.o qdialog/cxmlbase.o qdialog/cxmlsettings.o qdialog/fileutils.o qdialog/main.o qdialog/moc_capplication.o qdialog/moc_ccalendarbox.o qdialog/moc_cdialogapp.o qdialog/moc_cfilebox.o qdialog/moc_cformbox.o qdialog/moc_cgaugebox.o qdialog/moc_cinputbox.o qdialog/moc_cmenubox.o qdialog/moc_cmsgbox.o qdialog/moc_cpausebox.o qdialog/moc_ctailbox.o qdialog/moc_ctextbox.o qdialog/moc_ctimebox.o "
@@ -22,9 +22,9 @@ do
 done
 echo 'TARGETS' = $TARGETS qdialog/qdialog
 echo 'RMTARGETS' = $RMTARGETS qdialog/qdialog
-echo 'qdialog: '
+echo 'qdialog/qdialog: '
 echo -e "\t"'cd qdialog && qmake && $(MAKE)'
-echo 'all: $(TARGETS) qdialog'
+echo 'all: $(TARGETS) qdialog/qdialog'
 a=0
 for s in $(ls -1 src/*.c)
 do

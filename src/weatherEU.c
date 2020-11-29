@@ -21,7 +21,7 @@ int main(int argc, char **argv){
         } else {
             printf("Could be better weather outside\n");
         }
-/*        PAUSE(); */
+        PAUSE();
         puts("Bye.");
         return 0;
     } else {
