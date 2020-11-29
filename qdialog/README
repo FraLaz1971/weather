@@ -1,0 +1,8 @@
+#to compile (tested on Linux ubuntu 18.04)
+#needs qt4
+qmake
+make
+#to run
+./qdialog --help
+
+
